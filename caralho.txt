@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  color: white;
+  margin-left: 10px;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#inicio {
+  align-items: center;
+  padding: 20px;
+  color: white;
+  width: 100%;
+  height: 90vh;
+
+  h1 {
+    font-weight: bold;
+    margin-top: 190px;
+  }
+}
+
+.bold2, .bold {
+  font-weight: bolder;
+}
+
+span {
+  color: #00b172;
+}
+
+h2 {
+  padding-bottom: 30px;
+  text-decoration: underline;
+  
+}
+
+#Spotify {
+  padding-top: 10px;
+  height: 60vh;
+  h2{
+    padding-bottom: 20px;
+    text-decoration: none;
+  }
+  h3 {
+    padding-top: 20px;
+  }
+}
+
+#kanye {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00b172;
+  color: white;
+  h2 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+}
+
+.row {
+  vertical-align: top;
+}
+
+.caixa {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  margin: 5px;
+  vertical-align: top;
+}
+
+
+.caixa2 {
+  display: inline-block;
+  width: 260px;
+  height: 100px;
+  padding: 10px;
+  margin: 5px;
+  vertical-align: top;
+  text-align:  center;
+}
+
+.text {
+  
+  h2{
+    padding-left: 20px;
+  }
+  
+}
+
+
+/* Navbar */
+.navbar {
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+/* imagens */
+.logo {
+  width: 200px;
+}
+
+.features {
+  width: 100px;
+}
+
+.quality {
+  width: 100px;
+  padding-bottom: 14px;
+}
+
+.logo2 {
+  width: 150px;
+  margin-left: 0;
+  padding-left: 0;
+  
+}
+
+.yeye {
+  width: 300px;
+  height: 500px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+
+/*tablets (landscape) */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .background {
+    height: 70vh;
+  }
+
+  #inicio {
+    height: 300px;
+    padding: 10px 10px;
+    align-items: center;
+    
+    h1{
+      margin-top: 15px;
+      font-size: 1.8em;
+    }
+  }
+
+  .container {
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .features, .quality {
+    width: 80px;
+    height: 80px;
+  }
+
+  .bold{
+    font-weight: bolder;
+    font-size: 1.4em;
+  }
+
+  #Spotify, #kanye {
+    height: auto;
+    padding: 10px;
+  }
+
+  .caixa, .caixa2 {
+    width: calc(100% - 20px);
+    margin: 10px auto;
+  }
+
+  .yeye {
+    width: calc(100% - 40px);
+    height: auto;
+    margin-right: 0;
+    margin-left: auto;
+  }
+  
+}
+

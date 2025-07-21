@@ -3,233 +3,143 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  text-align: center;
-  
 }
 
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  
+.logo {
+  width: 200px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
-  color: white;
-  margin-left: 10px;
-}
-
-section {
-  width: 100%;
-  height: 100vh;
-}
-
-.background {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-#inicio {
-  align-items: center;
   padding: 20px;
-  color: white;
-  width: 100%;
-  height: 90vh;
-
-  h1 {
-    font-weight: bold;
-    margin-top: 190px;
-  }
 }
 
-.bold2, .bold {
-  font-weight: bolder;
+nav ul {
+  display: flex;
+  list-style: none;
 }
 
-span {
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+nav ul li a:hover {
   color: #00b172;
 }
 
-h2 {
-  padding-bottom: 30px;
-  text-decoration: underline;
-  
-}
-
-#Spotify {
-  padding-top: 10px;
-  height: 60vh;
-  h2{
-    padding-bottom: 20px;
-    text-decoration: none;
-  }
-  h3 {
-    padding-top: 20px;
-  }
-}
-
-#kanye {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #00b172;
+.inicio {
   color: white;
+  background: url("../images/landing.png");
+  width: 100%;
+  height: 100vh;
+}
+
+.texto {
+  text-align: center;
+  margin-top: 220px;
+}
+
+.spotify {
+  width: 100%;
+  height: 70vh;
+  padding: 30px 90px;
+
   h2 {
-    margin-top: 0px;
-    margin-bottom: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 20px;
   }
 }
 
-.row {
-  vertical-align: top;
+.feature img {
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
-.caixa {
-  display: inline-block;
-  width: 200px;
-  height: 100px;
-  padding: 10px;
-  margin: 5px;
-  vertical-align: top;
+.feature {
+  text-align: center;
 }
 
-
-.caixa2 {
-  display: inline-block;
-  width: 260px;
-  height: 100px;
-  padding: 10px;
-  margin: 5px;
-  vertical-align: top;
-  text-align:  center;
-}
-
-.text {
-  
-  h2{
-    padding-left: 20px;
-  }
-  
-}
-
-
-/* Navbar */
-.navbar {
-  padding: 10px;
-}
-
-.navbar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-.navbar li {
-  margin-right: 20px;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: white;
-}
-
-/* imagens */
-.logo {
-  width: 200px;
+/*titulo HD Music das funcionalidades*/
+.hdmusic {
+  margin-top: 11px;
 }
 
 .features {
-  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  p{
+    text-align: center;
+    max-width: 40%;
+    margin: 0 auto;
+  }
+  h3 {
+    color: #00b172;
+  }
 }
 
-.quality {
-  width: 100px;
-  padding-bottom: 14px;
+.texto-final {
+  width: 470px;
+  padding: 20px;
+  color: #ffffff;
+  margin-left: 30px;
+  margin-top: 30px;
+  padding-top: 30px;
+  h2 {
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-decoration: underline;
+  }
 }
 
-.logo2 {
+/* subtítulo da ultima seção */
+.discover {
+  display: inline-block;
+  justify-content: space-between;
+  padding: 10px;
+  width: 260px;
+  text-align: center;
+  margin-left: 55px;
+}
+
+.final {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: #00b172;
+}
+
+.logo-final img {
   width: 150px;
-  margin-left: 0;
-  padding-left: 0;
-  
 }
 
-.yeye {
+.logo-final{
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.kanye{
+width: 25%;
+height: 40%;
+align-items: center;
+}
+
+.kanye img{
   width: 300px;
-  height: 500px;
+  height: 600px;
   border-radius: 10px;
-  margin-right: 20px;
+  margin-top: 55px;
+  margin-right: 5px;
 }
-
-
-/*tablets (landscape) */
-@media screen and (max-width: 768px) {
-  body {
-    padding: 20px;
-  }
-
-  header {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .background {
-    height: 70vh;
-  }
-
-  #inicio {
-    height: 300px;
-    padding: 10px 10px;
-    align-items: center;
-    
-    h1{
-      margin-top: 15px;
-      font-size: 1.8em;
-    }
-  }
-
-  .container {
-    width: 100%;
-    padding: 40px 20px;
-  }
-
-  .features, .quality {
-    width: 80px;
-    height: 80px;
-  }
-
-  .bold{
-    font-weight: bolder;
-    font-size: 1.4em;
-  }
-
-  #Spotify, #kanye {
-    height: auto;
-    padding: 10px;
-  }
-
-  .caixa, .caixa2 {
-    width: calc(100% - 20px);
-    margin: 10px auto;
-  }
-
-  .yeye {
-    width: calc(100% - 40px);
-    height: auto;
-    margin-right: 0;
-    margin-left: auto;
-  }
-  
-}
-
